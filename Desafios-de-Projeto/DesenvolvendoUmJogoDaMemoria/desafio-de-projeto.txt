@@ -1,0 +1,33 @@
+Instrutora: Gabriela Pinheiro Github: http://www.github.com/SpruceGabriela
+
+Desenvolvendo um jogo da memória
+
+Nesse projeto, o desafio será criar um jogo da memória utilizando apenas HTML, CSS e Javascript. Com poucas linhas de código, aprenderemos juntos a trabalhar com efeitos 3D no CSS e lógica de programação utilizando condicionais, Immediately Invoked Function Expression e manipulação de Array em um projeto super divertido.
+
+Parte 1
+
+
+Parte 2
+
+
+
+Parte 3
+
+
+
+Parte 4
+
+
+
+
+Parte 5
+
+
+
+Parte 6
+
+
+
+Parte 7
+
+Objetivo do Projeto
