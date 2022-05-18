@@ -1,0 +1,11 @@
+Instrutora: Stephany Nusch.
+
+IDE Instalação e Configuração (Visual Studio Code)
+
+Instalando o VSCode
+
+Apresentação do curso
+
+Instalação
+
+https://code.visualstudio.com/download
