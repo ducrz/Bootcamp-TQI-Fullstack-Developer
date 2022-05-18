@@ -1,0 +1,40 @@
+Instrutora: Gabriela Pinheiro Github: http://www.github.com/SpruceGabriela
+
+Desenvolvendo um menu hamburguer e morphing menu com CSS Transitions
+
+Nesse projeto você aprenderá os mais importantes tópicos para alavancar no mundo das animações utilizando CSS. Dentre eles o CSS Transitions utilizando pseudo elementos e pseudo classes e também CSS @keyframes. Ao fim do projeto, teremos a construção de um portfólio apenas utilizando HTML e CSS para fixação das aulas.
+
+
+Parte 1
+
+
+Parte 2
+
+Folder transitions_1
+
+Parte 3
+
+Folder transitions_2
+
+Parte 4
+
+Folder keyframes_1
+
+
+Parte 5
+
+Folder keyframdes_2
+
+Parte 6
+
+Folder projeto_final
+
+Parte 7
+
+Parte 8
+
+Parte 9
+
+Parte 10
+
+Parte 11
