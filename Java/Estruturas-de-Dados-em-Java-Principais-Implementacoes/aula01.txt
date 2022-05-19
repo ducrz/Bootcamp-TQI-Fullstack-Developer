@@ -1,0 +1,150 @@
+Instrutor: João Dutra. GitHub: https://github.com/jrdutra
+
+Estruturas de Dados em Java: Principais Implementações
+
+
+Conceitos de equals e hashCode
+
+Equals() e hashCode()
+
+- Melhorar a busca de objetos
+- Devem ser implementados juntos
+
+
+Folder equalshashCode
+
+
+Stack (Pilha)
+
+Stack<Carro> stackCarros = new Stack<>();
+
+stackCarros.push(new Carro("Ford"));
+stackCarros.push(new Carro("Chevrolet"));
+stackCarros.push(new Carro("Fiat"));
+
+stackCarros.search(new Carro("Chevrolet"));
+
+
+stackCarros.pop();
+stackCarros.peek();
+stackCarros.empty();
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+
+Folder stack
+
+
+
+Queue (Fila, LikedList)
+
+Queue<Carro> queueCarros = new LinkedList<Carro>();
+
+queueCarros.add(new Carro("Fiat"))
+queueCarros.element();
+queueCarros.offer(new Carro("Renault"));
+queueCarros.peek();
+queueCarros.remove();
+queueCarros.poll();
+queueCarros.isEmpty();
+
+
+Folder queue
+
+
+List (ArrayList)
+
+List (Interface List)
+
+Principais Métodos
+
+boolean	add(E e)
+void	add(int index, E element)
+boolean	addAll(Collection<? extends E> c)
+boolean	addAll(int index, Collection<? extends E> c)
+void	clear()
+boolean	contains(Object o)
+boolean	containsAll(Collection<?> c)
+boolean	equals(Object o)
+E	get(int index)
+int	hashCode()
+int	indexOf(Object o)
+boolean	isEmpty()
+Iterator<E>	iterator()
+int	lastIndexOf(Object o)
+ListIterator<E>	listIterator()
+ListIterator<E>	listIterator(int index)
+E	remove(int index)
+boolean	remove(Object o)
+boolean	removeAll(Collection<?> c)
+boolean	retainAll(Collection<?> c)
+E	set(int index, E element)
+int	size()
+List<E>	subList(int fromIndex, int toIndex)
+Object[]	toArray()
+<T> T[]	toArray(T[] a)
+
+
+List<Carro> listCarros = new ArrayList<>();
+
+listCarros.add(new Carro("Peugeot"));
+listCarros.contains(new Carro("Ford"));
+listCarros.get(2);
+listCarros.indexOf(new Carro("Fiat"));
+listCarros.remove(2);
+
+
+
+Folder list
+
+
+Set (HashSet)
+
+Set (Interface Set) - Conjunto
+
+Principais Métodos
+
+boolean	add(E e)
+boolean	addAll(Collection<? extends E> c)
+void	clear()
+boolean	contains(Object o)
+boolean	containsAll(Collection<?> c)
+boolean	equals(Object o)
+int	hashCode()
+boolean	isEmpty()
+Iterator<E>	iterator()
+boolean	remove(Object o)
+boolean	removeAll(Collection<?> c)
+boolean	retainAll(Collection<?> c)
+int	size()
+Object[]	toArray()
+<T> T[]	toArray(T[] a)
+
+
+Folder set
+
+
+Map (HashMap)
+
+Map (Interface Map)
+
+Principais Métodos
+
+void	clear()
+boolean	containsKey(Object key)
+boolean	containsValue(Object value)
+Set<Map.Entry<K,V>>	entrySet()
+boolean	equals(Object o)
+V	get(Object key)
+int	hashCode()
+boolean	isEmpty()
+Set<K>	keySet()
+V	put(K key, V value)
+void	putAll(Map<? extends K,? extends V> m)
+V	remove(Object key)
+int	size()
+Collection<V>	values()
+
+Folder map
+
+Conclusão
+

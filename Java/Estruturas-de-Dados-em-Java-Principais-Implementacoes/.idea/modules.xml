@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Estruturas-de-Dados-em-Java-Principais-Implementacoes.iml" filepath="$PROJECT_DIR$/.idea/Estruturas-de-Dados-em-Java-Principais-Implementacoes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/equalshashCode/equalshashcode.iml" filepath="$PROJECT_DIR$/equalshashCode/equalshashcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map/map.iml" filepath="$PROJECT_DIR$/map/map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/set/set.iml" filepath="$PROJECT_DIR$/set/set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
+    </modules>
+  </component>
+</project>
