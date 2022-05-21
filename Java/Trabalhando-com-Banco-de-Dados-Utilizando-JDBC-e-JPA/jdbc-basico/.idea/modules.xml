@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/jdbc-basico.iml" filepath="$PROJECT_DIR$/.idea/jdbc-basico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdbc-basico.main.iml" filepath="$PROJECT_DIR$/.idea/modules/jdbc-basico.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jdbc-basico.test.iml" filepath="$PROJECT_DIR$/.idea/modules/jdbc-basico.test.iml" />
+    </modules>
+  </component>
+</project>

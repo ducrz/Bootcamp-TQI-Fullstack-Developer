@@ -1,0 +1,143 @@
+Instrutor: Daniel Karam. GitHub: https://github.com/danielkv7
+
+Introdução ao JDBC
+
+Introdução ao Banco de Dados
+
+Objetivo da Aula
+
+1- Configurar Banco de Dados
+2- JDBC e drivers de conexão
+3- Consultas com JDBC
+
+Gradle Install: https://gradle.org/install/
+
+Configurar Banco de Dados
+
+Um Banco de Dados (BD) armazena dados de forma estruturada, tornando o acesso e atualização dos dados mais rápido, pois aumenta a eficiência computacional (menor “gasto“ de memória, processamento e tempo).
+
+Nesta aula será utilizado o banco de dados relacional MySQL.
+
+Passos para instalar e configurar o banco de dados para esta aula:
+
+folder part1/DatabaseInstructions
+
+Instalar MySQL
+Configurar usuário e senha
+
+sudo mysql
+
+CREATE USER 'dio'@'localhost' IDENTIFIED BY 'dio2022';
+GRANT ALL PRIVILEGES ON * . * TO 'dio'@'localhost';
+
+Instalar MySQL Workbench (Opcional)
+
+snap install mysql-workbench-community
+
+Criar Banco de dados 
+Criar uma tabela
+
+URL com Instruções de Instalação Ubuntu 18.04
+https://github.com/danielkv7/digital-innovation-one/blob/master/Aula_JDBC_basico/jdbc-basico/src/main/java/part1/DatabaseInstructions
+
+
+Scripts SQL para criar tabela utilizada nessa aula :
+
+CREATE database digital_innovation_one;
+
+USE digital_innovation_one;
+
+CREATE TABLE aluno (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(80) NOT NULL,
+    idade INTEGER NOT NULL,
+    estado CHARACTER(2) NOT NULL
+);
+
+Exercício Final:
+
+Configure um banco de dados de acordo com os passos explicados nos slides anteriores
+
+JDBC e drivers de conexão
+
+JDBC(Java Databse Connectivity) é uma API com diversas classes e interfaces escritas na linguagem Java que estão presentes nos pacotes java.sql e javax.sql. Elas permitem que programas em Java realizem conexões em banco de dados para realizar consultas.
+Uma dessas clases principais é o driver JDBC que intermedia essa interação.
+
+Sem a API JDBC, seria necessário conhecer um protocolo proprietário de cada banco de dados para conectar-se e realizar consultas.
+Já com a API JDBC, é utilizada somente UMA interface Java para qualquer banco de dados, deixando o driver implementar as especificações de cada banco de dados, enquanto o desenvolverdor procupa-se apenas em selecionar um driver e criar as queries (neste caso, consultas SQL).
+
+
+Classes e interfaces que serão utilizadas:
+
+- Classe DriverManager - Responsáveis pela comunicação com os drivers disponíveis.
+É utilizada para criar uma Connection com o banco de dados através de uma URL (que especifica driver, localização do BD e nome do BD).
+
+- Interface Connection - Representa a conexão com o banco de dados. Permite criar "statements" que constroem consultas SQL.
+
+
+Passos para se conectar ao banco de dados:
+
+Realizar download do driver específico para o BD que será utilizado (nesta aula, será o MySQL). É possível baixar o driver manualmente ou através do Gradle ou Maven.
+
+https://mvnrepository.com/artifact/mysql/mysql-connector-java
+
+Criar URL (string de conexão) com os seguintes parâmetros: driver, endereço do BD e nome do BD.
+
+Criar uma connection através do “DriverManager” utilizando o método “getConnection”, passando os parâmetros: string de conexão, usuário e senha.
+
+Exercício final
+
+Criar outro usuário do BD e senha deste usuário e se conectar através da API JDBC.
+
+Explorar os métodos da classe DriverManager e da interface Connection através da IDE (ex: intelliJ IDEA, eclipse…) ou documentos oficiais.
+
+Configurar outro banco de dados (ex: PostgreSQL, H2…)e tentar se conectar a ele utilizando a API JDBC.
+
+
+Consultas com JDBC
+
+
+Existem 3 interfaces para montar comandos SQL:
+
+- Statement – Executar SQL comuns
+
+- PreparedStatement – Executar SQL parametrizáveis
+
+- CallableStatement – Executar stored procedures
+
+
+Preferir PreparedStatement ao Statement quando for parametrizar a consulta pois:
+
+- Previne SQL Injection
+
+- Melhora legibilidade
+
+- Melhora desempenho
+
+
+Existem 3 métodos para executar comandos SQL:
+
+- execute – Pode executar qualquer tipo de SQL
+
+- executeQuery – Usado para executar “SELECT”
+
+- executeUpdate – Usado para commandos de alteração de banco de dados (INSERT, UPDATE, DELETE, CREATE, ALTER)
+
+
+ResultSet – objeto que contem os dados de uma determinada consulta no banco de dados (normalmente com SELECT)
+
+São utilizados os métodos getters para buscar dados do ResultSet. Tais como: getInt, getFloat e getString.
+
+O método next() é utilizado para percorrer os registro do ResultSet. (Normalmente utilizado junto com while)
+
+
+Exercício final
+
+
+Crie uma tabela no BD chamada curso que terá como colunas: id, nome, duracao_horas. (no BD, a nomenclatura utilizada é snake_case).
+
+Crie uma classe em Java chamada curso que terá os mesmo atributos que a tabela criada no BD (no exercício anterior).  (obs: duracao_horas será camelCase).
+
+Crie CursoDAO que será responsável por se conectar ao BD para realizar as operações CRUD (Create, Read, Update, Delete).
+
+Testar os métodos do CursoDAO em uma classe que tenha o método public static void main(String[] args).
