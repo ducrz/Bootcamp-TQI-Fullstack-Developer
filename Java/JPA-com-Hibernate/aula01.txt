@@ -1,0 +1,56 @@
+Instrutor: João Paulo Oliveira Santos. Github: https://github.com/jpbaterabsb
+
+JPA com Hibernate
+
+Entendendo a Estrutura do Projeto
+
+Introdução e objetivos do curso
+
+Objetivo
+
+Entender o que é o JDBC?
+
+Entender o que é uma ORM ?
+
+Entender o que é o JPA?
+
+Aprender utilizar o JPA na prática.
+
+O que é JDBC
+
+O que é JDBC?
+
+Java Database Connectivity ou JDBC é um conjunto de classes e interfaces (API) escritas em Java que fazem o envio de instruções SQL para qualquer banco de dados relacional.
+
+JDBC
+
+Aplicação Java	-> Driver -> BD
+	JDBC        
+
+Estrutura do código - Parte 1
+
+Projeto jdbc-dio
+
+O que são ORM, JPA e Hibernate
+
+O que é um ORM ?
+
+ORM (Object Relational Mapper) é uma técnica de mapeamento objeto relacional que permite fazer uma relação dos objetos com os dados que os mesmos representam.
+
+O QUE É O JPA?
+
+
+Java Persistence API é uma API padrão da linguagem Java que descreve uma interface comum para frameworks de persistência de dados. A JPA define um meio de mapeamento objeto-relacional para objetos Java simples e comuns.
+
+JPA e Hibernate é a mesma coisa?
+
+Hibernate é uma tecnologia, ela foi a primeira tecnlogia de ORM  para Java. Com a popularização da mesma, a Oracle (empresa que mantia o Java na época) acabou por convidar os criadores do Hibernate para construírem o JPA que é uma espeficicação, indicando como deve ser implementado qualquer framework
+ORM para padronizar a forma com o desenvolvedor final trabalha com eles.
+
+Além do Hibernate um outro framework de JPA é o EclipseLink.
+
+
+
+Estrutura do código - Parte 2
+
+Projeto jpa-dio

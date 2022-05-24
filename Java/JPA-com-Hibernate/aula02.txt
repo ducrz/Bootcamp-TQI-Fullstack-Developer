@@ -1,0 +1,24 @@
+Desenvolvimento da comunicação com banco de dados
+
+Estrutura básica do banco de dados
+
+Desenvolvendo o código de persistência de dados
+
+
+Projeto jpa-dio
+
+Como funciona uma transação
+
+Por que utilizar o Hibernate?
+
+Por que utilizar o Hibernate?
+
+Faz mapeamento das tabelas do banco de dados com classes.
+
+Possui um pacote de classes uteis que facilitam o processo de interação com o Banco de dados, muitas
+das vezes não é necessário utilizar queries.
+
+No caso, de uma possível migração de banco de dados, não será necessário alterar nada no código. (Caso siga de forma integra as especificações do framework)
+
+Dúvidas e comentários finais
+
