@@ -1,0 +1,5 @@
+Recursos de Testes nas IDEs
+
+Visual Studio Code
+Eclipse
+IntelliJ IDEA

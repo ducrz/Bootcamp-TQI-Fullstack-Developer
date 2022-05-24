@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <name>junit5-exemplos</name>
+    <artifactId>junit5-exemplos</artifactId>
+    <groupId>one.digitalinnovation</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <description>Repositório com exemplos utilizando JUnit 5</description>
+
+    <url>https://github.com/willyancaetano/junit5-exemplos</url>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://spdx.org/licenses/MIT.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Digital Innovation One</name>
+        <url>https://digitalinnovation.one</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/willyancaetano/junit5-exemplos</url>
+        <connection>git@github.com:willyancaetano/junit5-exemplos.git</connection>
+        <developerConnection>git@github.com:willyancaetano/junit5-exemplos.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>Issues</system>
+        <url>https://github.com/willyancaetano/junit5-exemplos/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Pipelines</system>
+        <url>https://github.com/willyancaetano/junit5-exemplos/pipelines</url>
+    </ciManagement>
+
+    <developers>
+        <developer>
+            <id>willyancaetano</id>
+            <email>willyancaetano775@gmail.com</email>
+            <name>Willyan Guimarães Caetano</name>
+            <organization>Digital Innovation One</organization>
+            <organizationUrl>https://digitalinnovation.one</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/Sao_Paulo</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <main.class>one.digitalinnovation.junit.HelloWorld</main.class>
+        <java.version>11</java.version>
+        <junit.jupiter.version>5.8.0</junit.jupiter.version>
+        <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+        <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
+        <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>${main.class}</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>

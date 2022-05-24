@@ -1,0 +1,8 @@
+Aprofundando nos Recursos
+
+O básico para testar
+Mais algumas asserções
+After e Before
+Assumptions e Testes condicionais
+Testando exceptions
+Ordenando testes
