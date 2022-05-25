@@ -1,0 +1,71 @@
+Instrutor: Rodrigo Peleias GitHub: https://github.com/rpeleias
+
+Desenvolvimento de testes unitários para validar uma API REST de gerenciamento estoques de cerveja
+
+DESCRIÇÃO
+
+Neste Labs você irá aprender a testar, unitariamente, uma API REST para o gerenciamento de estoques de cerveja. Vamos construir testes unitários para validar o nosso sistema de gerenciamento de estoques de cerveja desenvolvido em Spring Boot, e também apresentar os principais conceitos e vantagens de criar testes unitários com JUnit e Mockito. Além disso, vamos também mostrar como desenvolver funcionalidades da nossa API através da prática do TDD.
+
+Conteúdos
+
+Como usar os desafios de projetos para criar seu portfólio
+
+Objetivos do curso e apresentação do repositório no GitHub
+
+Apresentação do Projeto no Intellij
+
+
+Introdução ao estilo arquitetural REST
+
+Pirâmide de testes
+
+Frameworks de testes unitários
+
+Revisando as dependências do arquivo pom.xml
+
+
+Testando os métodos das classes BeerService e BeerController - parte 1
+
+Testando os métodos das classes BeerService e BeerController - parte 2
+
+Testando os métodos das classes BeerService e BeerController - parte 3
+
+Testando os métodos das classes BeerService e BeerController - parte 4
+
+Testando os métodos das classes BeerService e BeerController - parte 5
+
+Testando os métodos das classes BeerService e BeerController - parte 6
+
+Testando os métodos das classes BeerService e BeerController - parte 7
+
+Testando os métodos das classes BeerService e BeerController - parte 8
+
+Testando os métodos das classes BeerService e BeerController - parte 9
+
+Testando os métodos das classes BeerService e BeerController - parte 10
+
+Testando os métodos das classes BeerService e BeerController - parte 11
+
+Testando os métodos das classes BeerService e BeerController - parte 12
+
+Testando os métodos das classes BeerService e BeerController - parte 13
+
+Testando os métodos das classes BeerService e BeerController - parte 14
+
+Finalizando o curso e explicando os testes comentados no GitHub
+
+Objetivos do Projeto
+
+
+Descrição do Desafio
+
+Neste Labs você irá aprender a testar, unitariamente, uma API REST para o gerenciamento de estoques de cerveja. Vamos construir testes unitários para validar o nosso sistema de gerenciamento de estoques de cerveja desenvolvido em Spring Boot, e também apresentar os principais conceitos e vantagens de criar testes unitários com JUnit e Mockito. Além disso, vamos também mostrar como desenvolver funcionalidades da nossa API através da prática do TDD.
+
+Neste desafio, você irá aprender ao mesmo tempo que desenvolve algo prático para o seu portfólio! Sendo assim, as seguintes tarefas serão realizadas:
+
+    Entender sobre testes unitários;
+    Entender os principais frameworks para testes unitários;
+    Desenvolver testes unitários para validação de funcionalides básicas: criação, listagem, consulta por nome e exclusão;
+    TDD: apresentação e exemplo prático com 2 funcionaliades importantes.
+
+Dica: você pode dar um "fork" no repositório para organizar melhor as suas alterações e evoluções, mantendo uma referência direta ao código original.
