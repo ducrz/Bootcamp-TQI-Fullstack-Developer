@@ -1,0 +1,123 @@
+Springboot Security com JWT
+
+Habilitando segurança com Spring
+
+Introdução
+
+Spring Security é apenas um grupo de filteos de servlet que ajudam você a adicionar autenticação e autorização ao seu aplicativo da web.
+
+
+Terminologia
+
+A autenticação refere-se ao processo de verificação da identidade de um usuário, com base nas credenciais fornecidas.
+Um exemplo comum é inserir um nome de usuário e uma senha ao fazer login em um site.
+Você pode pensar nisso como uma resposta à pergunta Quem é você?
+
+Autorização refere-se ao processo de determinar se um usuário tem permissão adequada para executar uma ação específica ou ler dados específicos, supondo que o usuário seja autenticado com êxito.
+Você pode pensar nisso como uma resposta à pergunta Um usuário pode fazer/ler isso?
+
+Princípio refere-se ao usuário autenticado no momento
+
+Autoridade concedida refere-se à permissão o usuário autenticado
+
+Função refere-se a um grupo de permissões do usuário autenticado
+
+Habilitando Segurança
+
+Em um projeto Spring Boot Web você precisa somente incluir a dependência no pom.xml
+
+Autenticação simples
+
+O Spring possui algumas configurações para definir os usuários na sua camada de segurança.
+
+Como sabemos por padrão o Spring Security habilita um usuário de nome user e gera uma senha aleatoriamente a cada inicialização. Para aplicações em produção esta não é uma abordagem um tanto aconselhável, e é por isso que vamos conhecer outras configurações de segurança.
+
+No application.properties
+
+O Spring Security verifica se existe alguma configuração de segurança no arquivo application.properties.
+
+spring.security.user.name=user
+spring.security.user.password=user123
+spring.security.user.roles=USERS
+
+
+Em Memória
+
+Esta configuração permite criar mais de um usuário e perfis de acesso.
+
+É necessário criar uma classe que estenda WebSecurityConfigureAdapter.
+
+Existem algumas implementações de criptografias utilizadas pelo Spring Security
+
+- use {bcrypt} for BcryptPasswordEncode (mais comum)
+- use {noop} for NoOpPasswordEncoder
+- use {pbkdf2} for Pbkf2PasswordEncoder
+- Use {scrypt} for SCryptPasswordEncoder
+- Use {sha256} for StandardPasswordEncoder
+
+
+Configure Adapter
+
+Nos exemplos acima já podemos considerar um nível de segurança em nossa aplicação, mas se percebermos o esforço de configuração para as novas funcionalidades poderá não ser uma abordagem tão satisfatória.
+Para isso vamos tentar deixar a parte da configuração centralizada na nossa WebSecurityConfig, removendo configurações adicionais em nossos controllers.
+
+
+
+Autenticação com Banco de dados
+
+Auth Database
+
+Interação com banco de dados.
+
+O Spring Boot dispõe de uma facilidade para integrar aplicações com banco de dados com o Spring Data JPA.
+
+
+
+JWT - JSON Web Token - Parte 1
+
+O JSON Web Token - JWT é um padrão da internet para criação de dados com assinatura opcional /ou criptografia cujo conteúdo contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo privado ou uma chave pública/privada.
+
+
+Qual a estrutura do JWT?
+
+JWT é uma representação dividida em três partes:
+
+- Header
+- Payload
+- Signature
+
+Portanto, um JWT normalmente parece-se com o seguinte: xxxxx.yyyyy.zzzzz.
+
+Header
+
+O Header i cabeçalho normalmente consiste em duas partes: o tipo de token, que é JWT e o algoritmo de assinatura que está sendo utilizado, como o HMAC SHA256 ou RSA.
+
+{
+	"alg": "HS256",
+	"typ": "JWT"
+}
+
+Payload
+
+De fato a estrutura do corpo contendo as informações de autenticação e autorização de um usuário.
+
+{
+	"sub": "glysns",
+	"name": "GLEYSON SAMPAIO",
+	"roles": ["USERS", "MANAGERS"]
+}
+
+
+Signature
+
+Para criar a parte da assinatura, você deve pegar o cabeçalho codificado, o payload codificado, a chave secreta, o algoritmo especificado no cabeçalho e assiná-lo.
+
+JWT - JSON Web Token - Parte 2
+
+
+JWT - JSON Web Token - Parte 3
+
+
+JWT - JSON Web Token - Parte 4
+
+

@@ -1,0 +1,13 @@
+Instrutor: Gleyson Sampaio
+
+Adicionando Segurança a uma API REST com Spring Security
+
+Apresentação e visão geral do curso
+
+- Introdução sobre segurança
+- Habilitando segurança com Spring
+- Configure Adapter
+- Autenticação com banco de dados
+- JWT - JSON Web Token
+- E muito mais...
+
