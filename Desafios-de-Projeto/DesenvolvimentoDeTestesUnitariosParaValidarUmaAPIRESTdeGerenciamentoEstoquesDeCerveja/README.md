@@ -8,17 +8,16 @@ Neste Labs você irá aprender a testar, unitariamente, uma API REST para o gere
 
 **Desafio:** Desenvolvimento de testes unitários para validar uma API REST de gerenciamento estoques de cerveja
 
+**Para executar a suíte de testes:**
 
+```shell script
+mvn clean test
+```
 
-**Ajustes Feitos:**
+**Endereço para visualizar a execução do projeto:**
 
-* 
-
-***Tela do Desafio de Projeto***
-
-
-
-
-
+```
+http://localhost:8080/api/v1/beers
+```
 
 
