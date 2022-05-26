@@ -1,0 +1,16 @@
+Instrutora: Carolina Santana Louzada.
+
+Fundamentos de Qualidade de Software
+
+
+O que é qualidade de software?
+
+Apresentação do curso
+
+Definindo qualidade
+
+Normas e padrões de qualidade
+
+Medindo qualidade
+
+Processos de gerenciamento de qualidade

@@ -1,0 +1,6 @@
+Gerenciamento de Defeitos
+
+Falando em controle de qualidade
+Caracterizando defeitos
+Ciclo de vida do bug
+Ferramentas de suporte
