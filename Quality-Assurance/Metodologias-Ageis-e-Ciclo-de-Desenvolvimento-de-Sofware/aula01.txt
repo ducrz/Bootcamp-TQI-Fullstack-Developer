@@ -1,0 +1,19 @@
+Instrutora: Carolina Santana Louzada.
+
+
+Metodologias Ágeis e Ciclo de Desenvolvimento de Software
+
+
+Processos de Software
+
+Apresentação do curso
+
+Definindo processo, fluxo e padrões de software
+
+Modelo Prescritivo
+
+Modelos incremental, iterativo e concorrente
+
+Modelos especializados
+
+Processo Unificado
