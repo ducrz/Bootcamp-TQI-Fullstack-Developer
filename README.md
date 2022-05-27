@@ -11,8 +11,10 @@ Os estudantes serão capacitados para lidar, ao mesmo tempo, com o front-end e o
 
 Os melhores classificados no bootcamp serão selecionados para seguir nas fases seguintes do processo seletivo de contratação.
 
+**Conclusão do Bootcamp:** 27/05/2022
+
+![Certificado de Conclusão Bootcamp TQI Fullstack Fullstack Developer](assets/certificado-conclusao.png)
 
 
-[Inscrições abertas até dia 27/05!](https://www.dio.me/bootcamp/tqi-fullstack-developer)
 
 
